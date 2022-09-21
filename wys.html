@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="wys.css">
 </head>
 <body>
-    <div id="header">
+  <script>
+      const { response } = require("express");
+      const express = require("express");
+      const app = express();
+      app.get("/",function(req, resp){
+      resp.send("
+    div id="header">
         <div class="container">
             <nav>
                 <img src="3.png" class="logo">
@@ -64,7 +70,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>";});
 
     <script>
 
@@ -83,6 +89,9 @@
         }
 
     </script>
+    
+   app.listen(3000); 
+  </script>
 
 </body>
 </html>
