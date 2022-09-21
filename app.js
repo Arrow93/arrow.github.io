@@ -3,6 +3,6 @@ const express = require("express");
 const app = express();
 
 app.get("/",function(req, resp){
-    resp.sendFile(__dirname + "/app.html");
+    resp.sendFile(__dirname + "/wys.html");
 });
 app.listen(3000);
